@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="trans">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#009900</color>
+    <color name="talking_bg">#0cce6b</color>
+    <color name="main_color">#6d8aff</color>
+    <color name="login_txt">#4982f0</color>
+    <color name="main">#8DEEEE</color>
+    <color name="back_color">#efefef</color>
+    <color name="gray">#cccccc</color>
+    <color name="trans_grey">#80e9e9e9</color>
+    <color name="time_bg">#80d0d0d0</color>
+    <color name="light_top_color">#FFFAFA</color>
+    <color name="timeline_light_grey">#e9e9e9</color>
+    <color name="bg_sort_color">#9B9490</color>
+    <color name="actions_panel_lan">#71423d3b</color>
+    <color name="test">#fcfcfc</color>
+    <color name="timeline_lighter_grey">#cccccc</color>
+    <color name="alertdialog_line">#EAEAEA</color>
+    <color name="biantai_gray">#606060</color>
+    <color name="text_color">#9C9C9C</color>
+    <color name="error_color">#FF8000</color>
+    <color name="sidebar_color">#383838</color>
+    <color name="tran_pic_color">#80383838</color>
+    <color name="tran_sidebar">#e0C0C0C0</color>
+    <color name="tran_sidebar_text">#f0dddddd</color>
+    <color name="red">#ff0000</color>
+    <color name="talk_bg">#181f24</color>
+    <color name="top_text_color">#8C8C8C</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="trawhite">#60ffffff</color>
+    <color name="gray_white">#F8F8F8</color>
+    <color name="light_txt_color">#b5b5b5</color>
+
+</resources>

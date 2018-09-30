@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/window_rl"
+    android:background="@mipmap/dianhua"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="60dp"
+    android:layout_height="90dp">
+
+    <TextView
+        android:textSize="10sp"
+        android:id="@+id/window_time"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

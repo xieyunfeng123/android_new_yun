@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/activity_home_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@+id/home_bottom"
+        android:background="@color/back_color" />
+
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:id="@+id/home_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/timeline_light_grey">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/home_message"
+                style="@style/home_message"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:checked="true"
+                android:drawableTop="@drawable/home_messsages"
+                android:text="@string/message"
+                android:textSize="@dimen/layout_10dp"/>
+
+            <RadioButton
+                android:id="@+id/home_phoneBook"
+                style="@style/home_message"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:drawableTop="@drawable/home_chat"
+                android:text="@string/phoneBook"
+                android:textSize="@dimen/layout_10dp"/>
+
+            <RadioButton
+                android:id="@+id/home_me"
+                style="@style/home_message"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:drawableTop="@drawable/home_me"
+                android:text="@string/me"
+                android:textSize="@dimen/layout_10dp"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

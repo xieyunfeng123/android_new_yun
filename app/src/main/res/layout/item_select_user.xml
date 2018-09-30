@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_top_tpye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alertdialog_line"
+        android:padding="5dp"
+        android:text="A"
+        android:textColor="@color/text_color"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/item_select_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_marginLeft="5dp"
+            android:id="@+id/item_user_check"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:button="@drawable/checkbox_select"
+            android:clickable="false" />
+
+        <com.ityun.zhihuiyun.view.CircleBgImageView
+            android:id="@+id/item_user_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+             />
+
+
+        <TextView
+            android:id="@+id/item_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alertdialog_line" />
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/item_showphoto_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alertdialog_line"
+        android:padding="@dimen/layout_5dp"
+        android:textSize="@dimen/text_12sp"
+        android:textColor="@color/black"/>
+
+
+    <com.ityun.zhihuiyun.view.NoScrollGridView
+        android:id="@+id/item_showphoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_10dp"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="@dimen/layout_5dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/layout_5dp"/>
+
+
+</LinearLayout>

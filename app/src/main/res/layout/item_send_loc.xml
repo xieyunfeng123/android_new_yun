@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/chat_time_bg"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="11dp">
+
+
+        <com.ityun.zhihuiyun.view.CircleTextView
+            android:id="@+id/iv_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:fillColor="@color/main_color" />
+
+        <LinearLayout
+            android:padding="2dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/ll_loc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_avatar"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/sendloc_address"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginTop="1.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxEms="13"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:textSize="13sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/iv_loc"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_fail_resend"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/ll_loc"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/chat_fail_resend_normal"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progress_load"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/ll_loc"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp">
+
+        <com.ityun.zhihuiyun.view.CircleTextView
+            app:borderColor="@color/white"
+            app:borderWidth="2dp"
+            android:id="@+id/item_talk_group_member_img"
+            android:textSize="15sp"
+            android:text="已拒绝"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:fillColor="@color/main_color"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/item_talk_group_member_name"
+            android:layout_marginTop="5dp"
+            android:text="123"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

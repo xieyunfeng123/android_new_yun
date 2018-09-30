@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_department_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/layout_10dp"
+    android:padding="@dimen/layout_10dp"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/item_user_check"
+        android:layout_marginLeft="5dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:button="@drawable/checkbox_select"
+        android:clickable="false" />
+
+    <com.ityun.zhihuiyun.view.CircleTextView
+        android:id="@+id/item_user_img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitXY"
+        android:textColor="@color/white"
+        app:fillColor="@color/main_color"
+        android:textSize="@dimen/layout_15dp"
+        />
+
+
+    <TextView
+        android:id="@+id/item_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>

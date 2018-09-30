@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="layout_0dp">0dp</dimen>
+    <dimen name="layout_0.2dp">0.2dp</dimen>
+    <dimen name="layout_1dp">1dp</dimen>
+    <dimen name="layout_3dp">3dp</dimen>
+    <dimen name="layout_5dp">5dp</dimen>
+    <dimen name="layout_10dp">10dp</dimen>
+    <dimen name="layout_15dp">15dp</dimen>
+    <dimen name="layout_20dp">20dp</dimen>
+    <dimen name="layout_25dp">25dp</dimen>
+    <dimen name="layout_30dp">30dp</dimen>
+    <dimen name="layout_50dp">50dp</dimen>
+    <dimen name="layout_55dp">55dp</dimen>
+
+    <!-- 文字大小 -->
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_15sp">15sp</dimen>
+    <dimen name="text_17sp">17sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+
+</resources>

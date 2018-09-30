@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">指挥云</string>
+
+    <!-- 首页 -->
+    <string name="message">消息</string>
+    <string name="phoneBook">通讯录</string>
+    <string name="me">我的</string>
+
+    <!-- 我 -->
+    <string name="changepwd">修改密码</string>
+    <string name="inputpsd">请输入密码</string>
+    <string name="imageQuality">画面质量</string>
+    <string name="sys_setting">系统设置</string>
+    <string name="banben">版本号</string>
+    <string name="exit">注销登录</string>
+    <string name="wait">等待接听</string>
+
+    <!-- 画面质量 -->
+    <string name="lowImageQuality">480p  ( 640X480 )</string>
+    <string name="mediumImageQuality">720p  ( 1280X720 )</string>
+    <string name="highImageQuality">1080p  ( 1920X1080 )</string>
+
+    <!-- 系统设置 -->
+    <string name="new_message">新消息提醒</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="drawing_unlock">绘图缓存</string>
+    
+    <string name="search">搜索</string>
+    <string name="group">群组</string>
+    <string name="friend">联系人</string>
+    <string name="select_user">选择联系人</string>
+    <string name="group_name">群名称</string>
+    <string name="create_sucess">完成创建</string>
+    <string name="net_meeting">网络会议</string>
+    <string name="pic">图片</string>
+    <string name="add_remark">添加备注</string>
+    <string name="remark_name">备注名</string>
+    <string name="add">添加</string>
+    <string name="delete_group">退出群组</string>
+
+    <!-- 聊天 -->
+    <string name="map">地图</string>
+    <string name="becareful_message">清空所有聊天记录，请谨慎操作。</string>
+    <string name="becareful_group_img">可以访问相册上传，也可以拍照上传。</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <!-- 竖屏播放的视频布局 -->
+    <RelativeLayout
+        android:id="@+id/video_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@color/gray"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/video_portrait"
+        android:layout_toRightOf="@+id/video_portrait"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_send_head"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone">
+
+            <com.ityun.zhihuiyun.view.CircleTextView
+                android:id="@+id/cv_head"
+                borderWidth="@dimen/layout_3dp"
+                fillColor="@color/main_color"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:text="杰伦"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/layout_10dp"
+                android:text="周杰伦"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_send_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="邀请您远程协助..."
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_send_foot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/layout_20dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_refuse"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/jieshu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_refuse"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="拒接"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_receive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_receive"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/jieting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_receive"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="接听"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <!-- 接收视频头文件 -->
+        <include
+            android:id="@+id/receive_head"
+            layout="@layout/item_teamviewer_head" />
+
+
+        <!-- 接收视频页面需要显示的文本 -->
+        <LinearLayout
+            android:id="@+id/receive_text"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_below="@id/receive_head"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/layout_20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/loading_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:text="正在加载张的分享..."
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <!-- 接收视频的底部布局 -->
+        <include
+            android:id="@+id/receive_foot"
+            layout="@layout/item_teamviewer_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
